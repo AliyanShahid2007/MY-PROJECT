@@ -1,0 +1,65 @@
+/* style.css */
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* Navbar */
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  /* Cards */
+  .card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  /* Progress bar */
+  .progress {
+    height: 25px;
+    font-weight: 600;
+  }
+  
+  /* Contact Form */
+  form input, form textarea {
+    border-radius: 0.3rem;
+  }
+  .btn{
+    transition: transform 0.3s ease;
+  }
+  .btn:hover {
+    transform: translateY(-5px);
+  }
+  

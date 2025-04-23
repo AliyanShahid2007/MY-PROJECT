@@ -1,0 +1,83 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - PortFolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="style.js">
+</head>
+<body>
+
+<!-- Navbar (same as above) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">PortFolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="web.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Form -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <form id="contactForm">
+    <div class="mb-3"><input type="text" id="name" class="form-control" placeholder="Name"></div>
+    <div class="mb-3"><input type="email" id="email" class="form-control" placeholder="Email"></div>
+    <div class="mb-3"><input type="text" id="subject" class="form-control" placeholder="Subject"></div>
+    <div class="mb-3"><textarea id="message" rows="5" class="form-control" placeholder="Your message"></textarea></div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- Map -->
+<div class="container my-4">
+  <h3>Our Location</h3>
+  <iframe src="https://maps.google.com/maps?q=New York&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+</div>
+
+<!-- Footer -->
+<footer>&copy; 2025 Abdul Aliyan All rights reserved.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  // script.js
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+  
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+  
+        if (!name || !email || !subject || !message) {
+          alert("Please fill in all fields.");
+          return;
+        }
+  
+        alert("Thank you for contacting us!");
+        form.reset();
+      });
+    }
+  });
+  
+
+</script>
+</body>
+</html>

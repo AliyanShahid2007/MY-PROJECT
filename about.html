@@ -1,0 +1,60 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - MyWebsite</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="style.js">
+</head>
+<body>
+
+<!-- Navbar (same as above) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">PortFolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="web.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Image -->
+<section class="hero" style="background-image: url('https://via.placeholder.com/1200x400'); background-size: cover; background-position: center;">
+  <h1>About Us</h1>
+</section>
+
+<!-- Team Cards -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Team</h2>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="card"><img src="Images/HK.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5>Muhammad Hadis Khan</h5><p>CEO</p></div></div></div>
+    <div class="col-md-4"><div class="card"><img src="Images/EK.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5>Muhammad Ebad Khan</h5><p>Projects Manager</p></div></div></div>
+    <div class="col-md-4"><div class="card"><img src="Images/my.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5>Abdul Aliyan</h5><p>Developer</p></div></div></div>
+  </div>
+</div>
+
+<!-- Progress Bars -->
+<div class="container">
+  <h3>Company Growth</h3>
+  <p>Client Satisfaction</p>
+  <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 99%;">99%</div></div>
+  <p>Projects Completed</p>
+  <div class="progress"><div class="progress-bar bg-info" style="width: 92%;">92%</div></div>
+</div>
+
+<!-- Footer -->
+<footer>&copy; 2025 Abdul Aliyan All rights reserved.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
